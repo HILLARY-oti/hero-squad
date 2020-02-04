@@ -1,0 +1,30 @@
+{{#partial "title" }}
+    Create a Hero
+{{/partial}}
+
+<!--form.hbs.-->
+{{#partial "content"}}
+
+    <h1>Add your Hero</h1>
+    <form action='/'>
+        <div class="form-group">
+            <label for="hero">Your Hero</label>
+            <input id="hero" name="hero" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+            <label for="Super Power">Your Hero's Super Power.</label>
+            <input id="Superpower" name="super power" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+            <label for="Squad">Your hero's Squad</label>
+        <select id="Squad" name="Squad" class="form-control">
+            <option>Joker Squad</option>
+            <option>Rock Squad</option>
+            <option>Marvel Squad</option>
+        </select>
+        </div>
+        <button type="submit" class="btn">Go!</button>
+    </form>
+{{/partial}}
+
+{{> layout.hbs}}
