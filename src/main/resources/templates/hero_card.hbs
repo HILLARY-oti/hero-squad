@@ -1,0 +1,18 @@
+{{#partial "title" }}
+    Your Hero
+{{/partial}}
+
+
+{{#partial "content"}}
+
+    <h1>This is your hero and Description</h1>
+    <p>Hero's Name: {{ hero }}</p>
+    <p>Hero's Super power: {{ superPower }}</p>
+    <p>Hero's Weakness: {{ weakness }}</p>
+    <p>Hero's Age: {{ age }}</p>
+    <p>Hero's Squad: {{ squad }}</p>
+
+    <a href="/form">Go back</a>
+{{/partial}}
+
+{{> layout.hbs}}

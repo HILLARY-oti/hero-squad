@@ -1,0 +1,18 @@
+{{#partial "content"}}
+
+    <h1>Heroes list!</h1>
+
+    {{#if hero}} <!--if posts exist, then -->
+    {{#each hero }} <!--loop-->
+    <p>Current Heroes:</p>
+    <p>{{ content }}</p> <!--show-->
+    {{/each}}
+    {{else}} <!--no posts!-->
+    <p>No Heroes!</p>
+    {{/if}}
+
+    <p><a href="/form" >Add a new Hero</a></p>
+
+{{/partial}}
+
+{{> layout.hbs}}
